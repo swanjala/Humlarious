@@ -1,4 +1,4 @@
-package com.udacity.gradle.builditbigger;
+package com.nanodegree.sam.mainfragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,13 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
-
-/**
- * A placeholder fragment containing a simple view.
- */
 public class MainActivityFragment extends Fragment {
 
     public MainActivityFragment() {

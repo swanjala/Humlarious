@@ -1,1 +1,1 @@
-include ':app', ':backend'
+include ':app',':mainfragment',':jokesLib',':backend'
