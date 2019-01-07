@@ -44,18 +44,15 @@ android {
         targetCompatibility JavaVersion.VERSION_1_7
 
     }
-    flavorDimensions "version"
+    flavorDimensions "default"
     productFlavors {
         free {
-            dimension "version"
-            applicationIdSuffix ".free"
-            versionNameSuffix "-free"
+            dimension "default"
 
         }
         paid {
-            dimension "version"
-            applicationIdSuffix ".paid"
-            versionNameSuffix "-paid"
+            dimension "default"
+
         }
 
     }
