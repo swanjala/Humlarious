@@ -12,6 +12,15 @@
         <option name="BUILDABLE" value="true" />
       </configuration>
     </facet>
+    <facet type="app-engine-gradle" name="App Engine Gradle">
+      <configuration>
+        <option name="HTTP_ADDRESS" value="localhost" />
+        <option name="HTTP_PORT" value="8080" />
+        <option name="WAR_DIR" value="$MODULE_DIR$/build/exploded-app" />
+        <option name="WEB_APP_DIR" value="$MODULE_DIR$/src/main/webapp" />
+        <option name="APPENGINE_SDKROOT" value="$USER_HOME$/.gradle/appengine-sdk/appengine-java-sdk-1.9.59" />
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
     <output url="file://$MODULE_DIR$/build/classes/java/main" />
@@ -28,14 +37,16 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="jokesLib" exported="" />
-    <orderEntry type="library" exported="" name="Gradle: endpoints-framework-2.0.9" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jstl-1.2" level="project" />
     <orderEntry type="library" exported="" name="Gradle: javax.inject-1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: play-services-ads-17.1.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: endpoints-framework-2.0.9" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: appengine-api-1.0-sdk-1.9.59" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-api-client-appengine-1.21.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-oauth-client-appengine-1.21.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-api-client-servlet-1.21.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-oauth-client-servlet-1.21.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: servlet-api-2.5" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: servlet-api-2.5" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: play-services-ads-17.1.2" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-api-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-http-client-android-1.23.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: swagger-core-1.5.9" level="project" />
@@ -47,7 +58,6 @@
     <orderEntry type="library" exported="" name="Gradle: jackson-dataformat-yaml-2.4.5" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-http-client-jackson2-1.23.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jackson-core-2.6.4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: appengine-api-1.0-sdk-1.9.56" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-http-client-appengine-1.21.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-http-client-jdo-1.21.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-oauth-client-1.23.0" level="project" />

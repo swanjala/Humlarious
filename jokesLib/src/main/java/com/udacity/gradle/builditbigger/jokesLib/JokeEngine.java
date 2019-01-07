@@ -1,4 +1,4 @@
-package com.udacity.gradle.builditbigger.backend;
+package com.udacity.gradle.builditbigger.jokesLib;
 
 import com.udacity.gradle.builditbigger.jokesLib.JokeFactory;
 import  java.util.Random;
@@ -15,10 +15,11 @@ public class JokeEngine {
 
         ArrayList<String> jokeList = jokeFactory.supplyJokes();
 
+        System.out.println(jokeList.size());
         Random r = new Random();
 
 
-        return jokeList.get(r.nextInt((jokeList.size() - 0) + 1));
+        return jokeList.get(r.nextInt(jokeList.size()));
 
     }
 }
