@@ -35,6 +35,7 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
         <activity android:name="com.nanodegree.sam.mainfragment.MainActivityDisplay"/>
+
     </application>
 
 </manifest>
