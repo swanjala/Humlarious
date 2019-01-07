@@ -6,11 +6,18 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.google.guava:guava:22.0'
+        //classpath 'com.google.guava:guava:24.1-jre'
         classpath 'com.android.tools.build:gradle:3.2.1'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+        classpath 'com.google.cloud.tools:endpoints-framework-gradle-plugin:1.0.2'
+       // classpath 'com.google.cloud.tools:appengine-gradle-plugin:1.3.3'
+
+       //classpath 'com.google.appengine:gradle-appengine-plugin:1.9.59'
+        classpath 'com.google.cloud.tools:appengine-gradle-plugin:1.3.3'
+
+
     }
 }
 

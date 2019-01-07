@@ -12,6 +12,15 @@
         <option name="BUILDABLE" value="true" />
       </configuration>
     </facet>
+    <facet type="app-engine-gradle" name="App Engine Gradle">
+      <configuration>
+        <option name="HTTP_ADDRESS" value="localhost" />
+        <option name="HTTP_PORT" value="8080" />
+        <option name="WAR_DIR" value="$MODULE_DIR$/build/exploded-app" />
+        <option name="WEB_APP_DIR" value="$MODULE_DIR$/src/main/webapp" />
+        <option name="APPENGINE_SDKROOT" value="$USER_HOME$/.gradle/appengine-sdk/appengine-java-sdk-1.9.59" />
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
     <output url="file://$MODULE_DIR$/build/classes/java/main" />
@@ -27,13 +36,17 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="Gradle: endpoints-framework-2.0.9" level="project" />
+    <orderEntry type="module" module-name="jokesLib" exported="" />
+    <orderEntry type="library" exported="" name="Gradle: jstl-1.2" level="project" />
     <orderEntry type="library" exported="" name="Gradle: javax.inject-1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: endpoints-framework-2.0.9" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: appengine-api-1.0-sdk-1.9.59" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-api-client-appengine-1.21.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-oauth-client-appengine-1.21.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-api-client-servlet-1.21.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-oauth-client-servlet-1.21.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: servlet-api-2.5" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: servlet-api-2.5" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: play-services-ads-17.1.2" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-api-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-http-client-android-1.23.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: swagger-core-1.5.9" level="project" />
@@ -45,21 +58,37 @@
     <orderEntry type="library" exported="" name="Gradle: jackson-dataformat-yaml-2.4.5" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-http-client-jackson2-1.23.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jackson-core-2.6.4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: appengine-api-1.0-sdk-1.9.56" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-http-client-appengine-1.21.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-http-client-jdo-1.21.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-oauth-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-http-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jsr305-3.0.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: slf4j-nop-1.7.21" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: customtabs-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: play-services-ads-lite-17.1.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: play-services-gass-17.1.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: play-services-ads-base-17.1.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: play-services-ads-identifier-16.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: play-services-measurement-sdk-api-16.0.4" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: play-services-measurement-base-16.0.5" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: play-services-basement-16.0.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: slf4j-api-1.7.21" level="project" />
     <orderEntry type="library" exported="" name="Gradle: swagger-annotations-1.5.9" level="project" />
     <orderEntry type="library" exported="" name="Gradle: commons-lang3-3.2.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: validation-api-1.1.0.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: support-v4-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: support-media-compat-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: support-fragment-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: support-core-utils-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: support-core-ui-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: support-compat-26.1.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: support-annotations-26.1.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jdo2-api-2.3-eb" level="project" />
     <orderEntry type="library" exported="" name="Gradle: joda-time-2.2" level="project" />
     <orderEntry type="library" exported="" name="Gradle: snakeyaml-1.12" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: runtime-1.0.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: transaction-api-1.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: common-1.0.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: guava-jdk5-17.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: httpclient-4.0.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: httpcore-4.0.1" level="project" />
