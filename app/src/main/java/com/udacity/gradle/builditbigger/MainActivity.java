@@ -9,6 +9,7 @@ import android.util.Pair;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.api.client.extensions.android.http.AndroidHttp;
@@ -27,7 +28,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        new EndpointAsyncTask().execute(new Pair<Context, String>(this, "Manfred"));
+
+        Button button = findViewById(R.id.loadJoke);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new EndpointAsyncTask()
+                        .execute(new Pair<Context, String>(getApplicationContext(), "Manfred"));
+            }
+        });
+
     }
 
 
@@ -46,17 +57,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public void tellJoke(View view) {
-
-
-        JokeEngine jokeEngine = new JokeEngine();
-
-        Intent intent = new Intent(this, MainActivityDisplay.class);
-        intent.putExtra("JokeExtra", jokeEngine.getMeAJoke());
-        startActivity(intent);
-
     }
 
     private class EndpointAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
