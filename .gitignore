@@ -5,3 +5,9 @@
 .DS_Store
 /build
 /captures
+*.ser
+*.iml
+*.jar
+*.aar
+*.zip
+*.war
