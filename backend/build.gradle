@@ -43,21 +43,7 @@ dependencies {
 
 
 }
-appengine {
 
-    deploy {
-        version =findProperty("appengine.deploy.promote")
-        def promoteProp = findProperty("appengin.deploy.promote")
-
-        if (promoteProp != null){
-            promote = new Boolean(promoteProp)
-        }
-    }
-    tools{
-        cloudSdkHome= "/Users/sam/Downloads/Desktop/google-cloud-sdk"
-    }
-
-}
 
 sourceCompatibility = JavaVersion.VERSION_1_7
 targetCompatibility = JavaVersion.VERSION_1_7

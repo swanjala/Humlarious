@@ -9,12 +9,17 @@ public class MainActivityDisplay extends AppCompatActivity {
     TextView jokeDisplayer;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.display_main);
 
         jokeDisplayer = findViewById(R.id.displayjoke);
-        jokeDisplayer.setText(getIntent().getStringExtra("JokeExtra"));
 
+        if (getIntent().hasExtra("JokeExtra")) {
+            jokeDisplayer.setText(getIntent().getStringExtra("JokeExtra"));
+
+        }else {
+            jokeDisplayer.setText("Unable to load joke");
+        }
     }
 }
