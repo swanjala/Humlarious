@@ -62,7 +62,6 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(":mainfragment")
-  // implementation project(":jokesLib")
 
     implementation 'com.android.support:appcompat-v7:28.0.0'
     freeImplementation 'com.google.android.gms:play-services-ads:17.1.2'
